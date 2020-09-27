@@ -10,12 +10,13 @@ public class user {
 
     public user() { }
 
-    public user (String firstName, String lastName, String email, String role){
+    public user (String firstName, String lastName, String email, String role, String password){
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.role = role;
         this.id = id;
+        this.password = password;
     }
     public String getId() {
         return id;
@@ -47,7 +48,7 @@ public class user {
     public void setPassword(String password) {
         this.password = password;
     }
-    public String getrolee() {
+    public String getrole() {
         return role;
     }
     public void setrole(String role) {

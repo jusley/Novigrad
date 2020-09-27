@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".profile"></activity>
+        <activity android:name=".employeeprofile"></activity>
+        <activity android:name=".emplog" />
+        <activity android:name=".clientlog" />
+        <activity android:name=".clientprofile" />
         <activity android:name=".Register" />
         <activity android:name=".loginGeneral" />
         <activity
-            android:name=".ui.login.LoginGeneral"
+            android:name=".ui.login.loginGeneral"
             android:label="@string/title_activity_login_general" />
         <activity android:name=".MainActivity">
             <intent-filter>

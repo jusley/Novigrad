@@ -18,7 +18,7 @@
         app:layout_constraintVertical_bias="0.977" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/firstname_Et"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.16" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/lastname_Et"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.262" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/phonenum_Et"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -54,13 +54,13 @@
         android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.373" />
+        app:layout_constraintVertical_bias="0.364" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/email_Et"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -74,7 +74,7 @@
         app:layout_constraintVertical_bias="0.465" />
 
     <EditText
-        android:id="@+id/editTextNumberPassword"
+        android:id="@+id/password_Et"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -89,14 +89,27 @@
 
     <Button
         android:id="@+id/register_Et"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
         android:layout_width="321dp"
         android:layout_height="46dp"
-        android:text="Button"
-        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:text="register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.771" />
+        app:layout_constraintVertical_bias="0.807" />
+
+    <EditText
+        android:id="@+id/role_Et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Role: employee or client"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/register_Et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_Et"
+        app:layout_constraintVertical_bias="0.264" />
 </androidx.constraintlayout.widget.ConstraintLayout>
